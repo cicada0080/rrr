@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Создание сайта1</title>
+<style>
+  .content{
+    max-width: 1500px;
+
+  }
+  body {
+    flex-wrap: wrap;
+    font-family: 'Arial', sans-serif;
+    background-image: url(фон.png) ;
+    max width: 100%;
+     font-size: calc(1vw + 1vh);
+    background position: :left;
+  }
+  h1 {
+    text-align: center;
+    padding: 200px 0;
+    font-size: 3.5em;
+    color: #000000;
+    margin: 0;
+    animation: fadeInDown 1s ease-out;
+     flex-wrap: wrap;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+     flex-wrap: wrap;
+     margin: 20px;
+  }
+  nav ul {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+     flex-wrap: wrap;
+     max-width: 100%;
+  }
+  nav a {
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    background-color: #deee00;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    max width: 10px;
+  }
+  nav a:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+  }
+  p {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-size: 1.2em;
+    margin: 0 auto 20px auto;
+  }
+
+  @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+<div class="contant"> 
+<nav>
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="neiro.html">История</a></li>
+      <li><a href="future.html">Инструменты для создания сайта </a></li>
+    <li><a href="milestones.html">Основы</a></li>
+</div>
+  </ul>
+</nav>
+<p> </p>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Инструменты</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(134, 221, 221);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px; /* Отступ от краев экрана */
+        }
+
+        /* --- 2. Главный контейнер для контента --- */
+        .container {
+            max-width: 1500px; /* Ограничиваем максимальную ширину */
+            margin: 0 auto; /* Центрируем контент */
+        }
+
+        /* --- 3. Заголовки --- */
+        h1, h2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* --- 4. Навигация --- */
+       nav {
+    display: flex;
+    justify-content: center;
+     flex-wrap: wrap;
+     margin: 20px;
+  }
+  nav ul {
+    display: flex;
+    gap: 100px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+     flex-wrap: wrap;
+     max-width: 100%;
+  }
+  nav a {
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    background-color: #deee00;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    max width: 10px;
+  }
+  nav a:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+  }
+
+        /* --- 5. Блоки контента (списки) --- */
+        .content-block {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        /* --- 6. Галерея изображений (Flexbox) --- */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap; /* Позволяет переносить элементы на новую строку */
+            gap: 25px; /* Отступ между картинками */
+            justify-content: center; /* Центрирует галерею */
+        }
+
+        .gallery-item {
+            flex-basis: calc(33.33% - 16px); /* Ширина для 3-х картинок в ряд с учетом зазора */
+             border-radius: 12px;
+             overflow: hidden; /* Чтобы радиус рамки применялся к картинке */
+             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+             transition: transform 0.3s;
+             background-color: #fafafa;
+         }
+         .gallery-item img {
+             width: 100%;
+             height: auto;
+             display: block;
+             border-radius: inherit; /* Наследуем скругление углов */
+         }
+         .gallery-item:hover {
+             transform: translateY(-8px);
+         }
+
+         /* Адаптивность для планшетов (2 картинки в ряд) */
+         @media (max-width: 992px) {
+             .gallery-item {
+                 flex-basis: calc(50% - 16px);
+             }
+         }
+         /* Адаптивность для телефонов (1 картинка в ряд) */
+         @media (max-width: 600px) {
+             .gallery-item {
+                 flex-basis: 100%;
+             }
+         }
+
+         /* --- 7. Блок с GIF-анимацией --- */
+         .gif-block {
+             text-align: center;
+             margin-top: 30px;
+         }
+         .gif-block img {
+             max-width: 100%;
+             height: auto;
+             border-radius: 12px;
+             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+         }
+
+         /* --- 8. Таблица --- */
+         table {
+             width: 100%;
+             border-collapse: collapse;
+             margin-top: 30px;
+             background-color: white;
+             border-radius: 15px;
+             overflow-x: auto; /* Прокрутка таблицы на маленьких экранах */
+         }
+         th, td {
+             padding: 14px;
+             text-align: left;
+             border-bottom: 1px solid #eaeaea;
+         }
+         th {
+             background-color: #f5f5f5;
+             font-weight: bold;
+         }
+    </style>
+</head>
+<body>
+  <nav>
+          <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="neiro.html">История</a></li>
+      <li><a href="future.html">Инструменты для создания сайта </a></li>
+    <li><a href="milestones.html">Основы</a></li>
+</div>
+  </ul>
+        </nav>
+    <div class="container">
+
+        <h1>С помощью чего можно создать сайт?</h1>
+
+         
+
+        <!-- Блок 1 -->
+        <div class="content-block">
+          <h2>Готовые конструкторы</h2>
+          <div class="gallery">
+              <div class="gallery-item"><img src="tildakar.png" alt="Tilda"></div>
+              <div class="gallery-item"><img src="squarespacekart.jpg" alt="Squarespace"></div>
+              <div class="gallery-item"><img src="wixkra.jpg" alt="Wix"></div>
+          </div>
+          <div class="gif-block">
+              <img src="tilda.gif" alt="Tilda Animation">
+          </div>
+        </div>
+
+        <!-- Блок 2 -->
+        <div class="content-block">
+          <h2>CMS</h2>
+          <div class="gallery">
+              <div class="gallery-item"><img src="worldkart.webp" alt="Wordpress"></div>
+              <div class="gallery-item"><img src="Joomla!-Logo.svg.png" alt="Joomla"></div>
+              <div class="gallery-item"><img src="dr.jpg" alt="Drupal"></div>
+          </div>
+        </div>
+
+        <!-- Блок 3 -->
+        <div class="content-block">
+          <h2>Ручная разработка</h2>
+          <div class="gif-block" style="margin-top: -25px;">  
+              <img src="sam.gif" alt="Manual Coding">
+          </div>
+        </div>
+
+        <!-- Таблица -->
+        <table border="1">
+          <thead>
+              <tr>
+                  <th style="padding-left: 24px;">Критерий</th>
+                  <th>Готовые шаблоны</th>
+                  <th>CMS</th>
+                  <th>Ручная вёрстка</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr><td>Сроки запуска</td><td>Несколько часов — 2 дня</td><td>1–4 недели</td><td>От 1 месяца и больше</td></tr>
+              <tr><td>Уникальность дизайна</td><td>Низкая</td><td>Средняя</td><td>Высокая</td></tr>
+              <tr><td>Сложность внесения изменений</td><td>Просто / Сложно</td><td>Удобно</td><td>Сложно без навыков</td></tr>
+              <tr><td>Навыки для работы</td><td>Минимальные</td><td>Базовые</td><td>Высокие</td></tr>
+              <tr><td>Функциональность</td><td>Базовая</td><td>Широкая</td><td>Любая</td></tr>
+              <tr><td>Производительность</td><td>Средняя</td><td>Средняя</td><td>Высокая</td></tr>
+              
+          </tbody>
+      </table>
+
+    </div> <!-- Конец .container -->
+</body>
+</html>

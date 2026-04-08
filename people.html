@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ключевые события в истории сайтов</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.5em;
+    color: #34495e;
+    margin: 0;
+    animation: fadeInDown 1s ease-out;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #ffffff;
+  }
+  nav ul {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav a {
+    padding: 10px 20px;
+    background-color: #ff0909;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  nav a:hover {
+    background-color: #ff0800;
+    transform: scale(1.05);
+  }
+  p {
+    max width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-size: 1.2em;
+    margin: 0 auto 20px auto;
+  }
+  .content {
+  display: flex;
+  align-items: center; /* по вертикали по центру */
+  gap: 20px; /* промежуток между картинкой и текстом */
+}
+.left-image {
+  max-width: 600px; /* или любой размер */
+  height: auto;
+}
+
+  @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+<h1>Ключевые события</h1>
+<nav>
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="history.html">История</a></li>
+    <li><a href="milestones.html">Основы</a></li>
+    <li><a href="future.html">Как создавался этот сайт</a></li>
+  </ul>
+</nav>
+<ul>
+  <li><strong>1991:</strong> Создание первого веб-сайта Тимом Бернерс-Ли.</li>
+  <li><strong>1993:</strong> Появление Mosaic — первого популярного браузера.</li>
+  <li><strong>1994:</strong> Основание Netscape Communications.</li>
+  <li><strong>2004:</strong> Взлёт социальных сетей — Facebook, ВКонтакте.</li>
+  <li><strong>Сегодня:</strong> Веб стал неотъемлемой частью жизни.</li>
+</ul>
+</body>
+</html>

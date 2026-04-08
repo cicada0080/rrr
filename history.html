@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>История создания сайтов</title>
+<style>
+   .container {
+    display: flex;
+    align-items: center;
+  }
+  .image { /* Управление изображением*/
+    flex: 1;
+    padding-right: 20px; /* Расстояние между изображением и текстом */
+  }
+  .text {
+    flex: 1; /*позволяет тексту и картинке находиться на 1 уровне*/
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00c3ff, #ffffff);
+    width: 100%;
+  }
+  h1 {/*Позволяет управлять текстом, который будет помечен как h1*/
+    text-align: center; 
+    padding: 20px 0;
+    font-size: 2.5em;
+    color: #34495e;
+    margin: 0;
+    animation: fadeInDown 1s ease-out;
+  }
+  nav {/* Cама навигация*/
+    display: flex; 
+    justify-content: center; 
+    padding: 10px 0; 
+    background-color: #ffffff; 
+    padding: 50px 0px; 
+  }
+  nav ul {/* регулирует то, что будет внутри навигации*/
+    display: flex; 
+    gap: 15px; 
+    margin: 0; 
+    padding: 0; 
+    list-style: none;  
+  }
+  nav a {/* Круги, внутри которых текст*/
+    padding: 20px 100px;
+    background-color: #fce306;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;/* Из-за этого отсутвуют нижние подчёркивания под текстом.*/
+    transition: background-color 0.3s, transform 0.3s;
+  }
+   
+  p {
+    max width: 100%; 
+    padding: 0 20px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-size: 1.2em;
+    margin: 0 auto 20px auto;
+  }
+  .content {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px; /* промежуток между картинкой и текстом */
+}
+ 
+
+  @keyframes fadeInDown {
+    0% { opacity: 1; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+<h1>История создания сайтов</h1>
+<nav>
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="history.html">История</a></li>
+        <li><a href="future.html">Инструменты для создания сайта </a></li>
+    <li><a href="milestones.html">Основы</a></li>
+  </ul>
+</nav>
+ <div class="content">
+  <img src="Tims.webp" align="left">
+   
+  <div class="text">
+    <p> Основателем первого веб-сайта в мире считается британский физик, ученый и талантливый программист Тим Бернерс-Ли. Во время своей работы в Европейском Центре по ядерным исследованиям (CERN) в 1989 году он предложил руководству своего подразделения идею World Wide Web (Всемирная паутина). Основной целью было упростить обмен данными, разместив их в сети, чтобы ученым и исследователям было легче обмениваться информацией.
+ Хотя идея была одобрена, финансирование на реализацию проекта было ограниченное. Бернерс-Ли получил только один персональный компьютер фирмы NeXT для проведения своих экспериментов. Вместе с бельгийским разработчиком Робертом Кайо в 1990 году удалось создать первый веб-сайт (http://info.cern.ch), а также веб-браузер и редактор страниц, используя этот компьютер.Первый веб-сайт был достаточно простой: печатный текст и никакой компьютерной графики и тем более мультимедиа. Содержал веб-сайт основную информацию о проекте World Wide Web. Страница демонстрировала возможности языка HTML (язык гипертекстовой разметки) и позволяла пользователям переходить по ссылкам, открывая новые страницы. Позже сайт стал своеобразным каталогом сайтов, которые после обнародования этой технологии начали постепенно появляться.
+
+Таким образом, благодаря усилиям Тима Бернерс-Ли и его коллеги Роберта Кайо был создан первый веб-сайт в мире. Этот важный момент в истории информационных технологий открыл двери к новому миру свободного обмена информацией и невероятным возможностям, которые мы сегодня имеем благодаря интернету. </div>
+ </div>
+<center>  <a href="http://info.cern.ch"><p> ПЕРВЫЙ В МИРЕ САЙТ</p></a></center>
+</body> 
+
+ 
+</html>

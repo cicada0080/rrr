@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История создания первого в мире сайта</title>
+    <style>
+        /* --- Базовые настройки и сброс отступов --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(134, 221, 221);
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px; /* Отступ от краев браузера */
+        }
+
+        /* --- Главный контейнер для контента --- */
+        .container {
+            max-width: 1800px; /* Ограничиваем ширину текста для удобства чтения */
+            margin: 0 auto; /* Центрируем блок */
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Это важно, чтобы скругление работало для картинки */
+        }
+
+        /* --- Заголовок и навигация --- */
+        header {
+            text-align: center;
+            padding: 30px;
+ 
+        }
+
+        nav {
+    display: flex;
+    justify-content: center;
+     flex-wrap: wrap;
+     margin: 20px;
+  }
+  nav ul {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+     flex-wrap: wrap;
+     max-width: 100%;
+  }
+  nav a {
+    flex-wrap: wrap;
+    padding: 20px 50px;
+    background-color: #deee00;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    max width: 10px;
+  }
+  nav a:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+  }
+
+        /* --- Основное содержимое (текст и картинка) --- */
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap; /* Позволяет картинке быть над текстом на узких экранах */
+            padding: 30px;
+        }
+
+        .kartinka {
+            padding-left: 50px;
+            margin-left: 30px;
+             flex-shrink: 0; /* Запрещаем картинке сжиматься слишком сильно */
+             gap: 20px;
+         }
+
+         .kartinka img {
+             width: 450px; /* Фиксированная ширина для картинки */
+             height: auto;
+             border-radius: 8px;
+             object-fit: cover; /* Картинка заполнит область, сохраняя пропорции */
+         }
+
+         .text-content p {
+             font-size: 1.1rem; /* Читаемый размер шрифта */
+             margin-bottom: 20px;
+         }
+
+         /* --- Подвал (footer) --- */
+         footer {
+             text-align: center;
+             padding: 25px;
+             background-color: #f5f5f5;
+             border-top: 1px solid #eaeaea;
+         }
+
+         footer a {
+             color: inherit; /* Наследуем цвет текста */
+             text-decoration: underline;
+         }
+
+    </style>
+</head>
+<body>
+    <header>
+             <h1>История создания первого в мире сайта</h1>
+        </header>
+        <nav>
+          <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="neiro.html">История</a></li>
+      <li><a href="future.html">Инструменты для создания сайта </a></li>
+    <li><a href="milestones.html">Основы</a></li>
+</div>
+  </ul>
+        </nav>
+
+    <div class="container"> <!-- Главный контейнер -->
+
+        <div class="content-wrapper"> <!-- Обертка для текста и картинки -->
+            
+             
+
+            <section class="text-content">
+                
+                <p>Основателем первого веб-сайта в мире считается британский физик, ученый и талантливый программист Тим Бернерс-Ли. Во время своей работы в Европейском Центре по ядерным исследованиям (CERN) в 1989 году он предложил руководству своего подразделения идею World Wide Web (Всемирная паутина). Основной целью было упростить обмен данными, разместив их в сети, чтобы ученым и исследователям было легче обмениваться информацией. Хотя идея была одобрена, финансирование на реализацию проекта было ограниченное. Бернерс-Ли получил только один персональный компьютер фирмы NeXT для проведения своих экспериментов. Вместе с бельгийским разработчиком Робертом Кайо в 1990 году удалось создать первый веб-сайт (<a href="http://info.cern.ch">http://info.cern.ch</a>), а также веб-браузер и редактор страниц, используя этот компьютер.</p>
+                <p>Первый веб-сайт был достаточно простой: печатный текст и никакой компьютерной графики и тем более мультимедиа. Содержал веб-сайт основную информацию о проекте World Wide Web. Страница демонстрировала возможности языка HTML (язык гипертекстовой разметки) и позволяла пользователям переходить по ссылкам, открывая новые страницы. Позже сайт стал своеобразным каталогом сайтов, которые после обнародования этой технологии начали постепенно появляться.</p>
+                <p>Таким образом, благодаря усилиям Тима Бернерс-Ли и его коллеги Роберта Кайо был создан первый веб-сайт в мире. Этот важный момент в истории информационных технологий открыл двери к новому миру свободного обмена информацией и невероятным возможностям, которые мы сегодня имеем благодаря интернету.</p>
+           </section>
+<div class="kartinka">
+                <img src="Tims.webp" alt="Тим Бернерс-Ли">
+                <img src="i.webp" alt="Кайо">
+                <img src="il.jpg" alt="Тим Бернерс-Ли">
+                
+                <!-- Изображению обязательно нужен атрибут alt для доступности -->
+            </div>
+        </div> <!-- Конец .content-wrapper -->
+
+        <footer>
+           <div>
+               <a href="http://info.cern.ch" target="_blank"><p>ПЕРВЫЙ В МИРЕ САЙТ</p></a>
+           </div>
+        </footer>
+
+    </div> <!-- Конец .container -->
+</body>
+</html>
